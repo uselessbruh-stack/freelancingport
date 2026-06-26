@@ -74,7 +74,7 @@ export default function Contact() {
           {/* Heading */}
           <motion.h2
             variants={fadeInUp}
-            className="font-heading text-display-lg mb-6"
+            className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-display-lg mb-4 md:mb-6"
           >
             Let&apos;s Build Something{" "}
             <span className="text-gradient-gold">Exceptional.</span>
@@ -82,17 +82,17 @@ export default function Contact() {
 
           <motion.p
             variants={fadeInUp}
-            className="text-body-lg text-text-secondary mb-12 leading-relaxed"
+            className="text-sm md:text-base lg:text-lg text-text-secondary mb-8 md:mb-12 leading-relaxed"
           >
             Have a project in mind? I&apos;m available for freelance work and
             always excited to collaborate on products that make a difference.
           </motion.p>
 
           {/* CTA */}
-          <motion.div variants={fadeInUp} className="mb-16">
+          <motion.div variants={fadeInUp} className="mb-10 md:mb-16">
             <MagneticButton
               variant="primary"
-              className="text-base px-10 py-4"
+              className="text-sm md:text-base px-8 md:px-10 py-3 md:py-4"
               href="mailto:abhijithkrishnag234@gmail.com"
             >
               Hire Me
@@ -102,7 +102,7 @@ export default function Contact() {
           {/* Contact Links */}
           <motion.div
             variants={fadeInUp}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 max-w-3xl mx-auto"
           >
             {contactLinks.map((link) => (
               <a

@@ -42,14 +42,14 @@ export default function SectionHeading({
       animate={isInView ? "visible" : "hidden"}
       variants={fadeInUp}
       className={clsx(
-        "mb-16 md:mb-20",
+        "mb-10 md:mb-16 lg:mb-20",
         align === "center" && "text-center",
         className
       )}
     >
-      <h2 className="font-heading text-display-md mb-4">{renderTitle()}</h2>
+      <h2 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-display-md mb-3 md:mb-4">{renderTitle()}</h2>
       {subtitle && (
-        <p className="text-text-secondary text-body-lg max-w-2xl mx-auto">
+        <p className="text-text-secondary text-sm md:text-base lg:text-lg max-w-2xl mx-auto">
           {subtitle}
         </p>
       )}

@@ -88,14 +88,14 @@ export default function Process() {
                 </div>
 
                 {/* Card */}
-                <div className="glass rounded-2xl p-8 card-lift">
-                  <span className="text-caption text-accent-gold/40 font-mono text-2xl font-bold">
+                <div className="glass rounded-xl md:rounded-2xl p-5 md:p-8 card-lift">
+                  <span className="text-accent-gold/40 font-mono text-xl md:text-2xl font-bold">
                     {step.number}
                   </span>
-                  <h3 className="font-heading text-heading-md text-text-primary mt-2 mb-3">
+                  <h3 className="font-heading text-base md:text-lg text-text-primary mt-2 mb-2 md:mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-body-sm text-text-muted leading-relaxed">
+                  <p className="text-xs md:text-sm text-text-muted leading-relaxed">
                     {step.description}
                   </p>
                 </div>

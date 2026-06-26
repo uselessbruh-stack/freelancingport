@@ -126,46 +126,46 @@ export default function Projects() {
               key={project.title}
               variants={fadeInUp}
               custom={i}
-              className="group relative rounded-3xl glass overflow-hidden card-lift"
+              className="group relative rounded-2xl md:rounded-3xl glass overflow-hidden card-lift"
             >
               {/* Gradient overlay */}
               <div
                 className={`absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l ${project.gradient} opacity-50 pointer-events-none`}
               />
 
-              <div className="relative p-8 md:p-12">
+              <div className="relative p-5 md:p-8 lg:p-12">
                 {/* Header */}
-                <div className="flex flex-wrap items-start justify-between gap-4 mb-8">
+                <div className="flex flex-wrap items-start justify-between gap-3 md:gap-4 mb-5 md:mb-8">
                   <div>
-                    <span className="inline-block px-3 py-1 rounded-full text-caption uppercase tracking-widest bg-accent-gold/10 text-accent-gold mb-4">
+                    <span className="inline-block px-2.5 py-0.5 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs uppercase tracking-widest bg-accent-gold/10 text-accent-gold mb-3 md:mb-4">
                       {project.type}
                     </span>
-                    <h3 className="font-heading text-heading-lg text-text-primary">
+                    <h3 className="font-heading text-lg md:text-xl lg:text-2xl text-text-primary">
                       {project.title}
                     </h3>
-                    <p className="text-body-sm text-text-muted mt-1">
+                    <p className="text-xs md:text-sm text-text-muted mt-1">
                       Client: {project.client}
                     </p>
                   </div>
                 </div>
 
                 {/* Overview */}
-                <p className="text-body-md text-text-secondary mb-8 max-w-3xl leading-relaxed">
+                <p className="text-xs md:text-sm lg:text-base text-text-secondary mb-5 md:mb-8 max-w-3xl leading-relaxed">
                   {project.overview}
                 </p>
 
                 {/* Grid: Tech + Responsibilities + Results */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
                   {/* Technologies */}
                   <div>
-                    <h4 className="text-caption text-accent-gold uppercase tracking-widest mb-4">
+                    <h4 className="text-[10px] md:text-xs text-accent-gold uppercase tracking-widest mb-3 md:mb-4">
                       Technologies
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 rounded-full text-xs bg-surface-light text-text-secondary border border-border-subtle"
+                          className="px-2.5 py-0.5 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs bg-surface-light text-text-secondary border border-border-subtle"
                         >
                           {tech}
                         </span>
@@ -175,14 +175,14 @@ export default function Projects() {
 
                   {/* Responsibilities */}
                   <div>
-                    <h4 className="text-caption text-accent-gold uppercase tracking-widest mb-4">
+                    <h4 className="text-[10px] md:text-xs text-accent-gold uppercase tracking-widest mb-3 md:mb-4">
                       Responsibilities
                     </h4>
                     <ul className="space-y-2">
                       {project.responsibilities.map((r) => (
                         <li
                           key={r}
-                          className="text-body-sm text-text-muted flex items-start gap-2"
+                          className="text-xs md:text-sm text-text-muted flex items-start gap-2"
                         >
                           <span className="w-1 h-1 rounded-full bg-accent-gold mt-2 flex-shrink-0" />
                           {r}
@@ -200,7 +200,7 @@ export default function Projects() {
                       {project.results.map((r) => (
                         <li
                           key={r}
-                          className="text-body-sm text-text-muted flex items-start gap-2"
+                          className="text-xs md:text-sm text-text-muted flex items-start gap-2"
                         >
                           <span className="w-1 h-1 rounded-full bg-green-400 mt-2 flex-shrink-0" />
                           {r}

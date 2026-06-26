@@ -255,6 +255,11 @@ html.lenis body {
 @media (max-width: 768px) {
   :root {
     --navbar-height: 3.5rem;
+    --section-padding: clamp(3rem, 8vh, 5rem);
+  }
+
+  .card-lift:hover {
+    transform: translateY(-4px);
   }
 }
 
