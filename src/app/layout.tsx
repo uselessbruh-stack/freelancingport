@@ -22,7 +22,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ubstack.dev"),
+  metadataBase: new URL("https://ub-free.vercel.app"),
   title: "UB Stack | Full Stack Developer & UI/UX Designer",
   description:
     "Premium full-stack web development and UI/UX design. Building digital experiences that perform — modern UI, scalable architecture, exceptional user experience.",
@@ -37,12 +37,12 @@ export const metadata: Metadata = {
     "UB Stack",
     "Abhijith Krishna G",
   ],
-  authors: [{ name: "Abhijith Krishna G", url: "https://ubstack.dev" }],
+  authors: [{ name: "Abhijith Krishna G", url: "https://ub-free.vercel.app" }],
   creator: "Abhijith Krishna G",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ubstack.dev",
+    url: "https://ub-free.vercel.app",
     siteName: "UB Stack",
     title: "UB Stack | Full Stack Developer & UI/UX Designer",
     description:
