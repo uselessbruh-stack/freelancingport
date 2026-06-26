@@ -62,6 +62,10 @@ export const metadata: Metadata = {
     "color-scheme": "dark",
     "theme-color": "#0D0D0D",
   },
+  icons: {
+    icon: "/ub-logo.png",
+    apple: "/ub-logo.png",
+  },
 };
 
 export default function RootLayout({
